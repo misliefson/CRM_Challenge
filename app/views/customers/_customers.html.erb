@@ -1,0 +1,9 @@
+<h1>Customers</h1>
+
+<% @customers.each do |cust| %>
+	<h2><%= cust.full_name%></h2>
+	<p><%= cust.phone_number %></p>
+	<p><%= cust.email %></p>
+	<p><%= image_tag cust.image %></p>
+	<p><%= cust.notes %></p>
+<%end%>
